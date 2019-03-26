@@ -15,6 +15,8 @@ header, main{
   background-color: #e8ebef;
   padding: 0 10%;
   border-bottom: 1px solid grey;
+  position: fixed;
+  z-index: 1;
 }
 .secondbar{
   width: 100%;
@@ -23,6 +25,7 @@ header, main{
   background-color: white;
   padding: 0 10%;
   position: relative;
+  top: 90px;
 }
 .firstbar:after{
   content: "";
@@ -44,10 +47,12 @@ header:after{
 
 /* STRUTTURA MAIN */
 .contenitore1{
-  background: linear-gradient(90deg, #0884cc,#7fe3f4);
+  background: linear-gradient(45deg, #53dbcf,#157aa3);
   height: 800px;
 }
+
 .contenitore2{
+  width: 100%;
   height: 1800px;
   padding: 50px 0;
   background-color: #e3e6e8;
@@ -115,7 +120,6 @@ footer{
 
 
 
-
 /* STRUTTURA INTERNA E CONTENUTO SECONDA BARRA HEADER */
 .secondbarleft{
   float: left;
@@ -124,7 +128,6 @@ footer{
   width: 150px;
   height: 50px;
   position: absolute;
-  top: 25%;
 }
 .secondbarright{
   float: right;
@@ -142,20 +145,17 @@ footer{
 }
 
 /* CONTENUTO PRIMO CONTAINER */
-
 .textcontenitore1{
   float: left;
   width: 50%;
-  margin: 60px;
+  margin: 15% 10%;
 }
-
 .textcontenitore1 *{
   color: white;
   font-family: sans-serif;
   padding-right: 100px;
   margin-top: 25px;
 }
-
 .textcontenitore1 h1{
   font-size: 60px;
 }
@@ -177,38 +177,59 @@ footer{
 
 
 /* CONTENUTO SECONDO CONTENITORE */
-.contenitore2 img{
-  width: 300px;
-  height: 200px;
-  position: relative;
-  left: 50%;
-  transform:translate(-50%);
-}
-.textcontenitore2{
-  font-family: sans-serif;
-  color: #222830;
-  text-align: center;
-  font-size: 15px;
-}
-.contenitore2 h2:first-of-type{
-  font-size: 35px;
-}
-.contenitore2 div:first-of-type{
-  font-size: 18px;
-  margin: 30px 200px;
-}
-
-
-.riquadro1{
-  width: 70%;
+/* Contenuto primo subcontenitore */
+.subcontainer1{
+  width: 65%;
+  height: 300px;
+  margin: 0 auto;
   background-color: white;
+  padding: 30px 100px;
+  font-family: sans-serif;
+}
+.subcontainer1:hover{
+  box-shadow: 5px 5px 8px 8px;
+}
+.subleft1{
+  float: left;
+}
+.subleft1 img{
+  width: 200px;
+  height: 200px;
+}
+.subleft1 button{
+  height: 20px;
+  background-color: #d84422;
+  color: white;
+  display: block;
   position: relative;
   left: 50%;
-  transform: translate(-50%);
+  transform: translateX(-50%);
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
 }
-
-
-
+.subright1{
+  float: right;
+  width: 60%;
+  margin-top: 10px;
+}
+.subright1 h3,.subright1 div, .subright h5{
+  margin-bottom: 25px;
+}
+.subright1 h3{
+  font-size: 25px;
+}
+.subright1 ul{
+  margin-top: 10px;
+}
+.subright1 ul li{
+  display: inline-block;
+  padding-right: 25px;
+}
+li i{
+  color:#d84422;
+  margin-right: 10px;
+}
 /* STRUTTURA INTERNA E CONTENUTO CONTENITORE 3 */
 .textcontenitore3{
   color: white;
@@ -306,12 +327,14 @@ footer{
 }
 .slcright{
   float: right;
-}
-.slcright img{
+  overflow: hidden;
   width: 400px;
   height: 400px;
   border-radius: 400px;
-  background-color: pink;
+  background-color: lightcoral;
+}
+.slcright img{
+  width: 100%
 }
 
 
