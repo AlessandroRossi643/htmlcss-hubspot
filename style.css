@@ -54,7 +54,7 @@ header:after{
 }
 .contenitore3{
   height: 800px;
-  background: linear-gradient(90deg, #0884cc,#7fe3f4);
+  background: linear-gradient(45deg, #53dbcf,#157aa3);
   padding: 70px 20px;
 }
 .contenitore4{
@@ -209,7 +209,7 @@ footer{
 
 
 
-/* CONTENUTO CONTENITORE 3 */
+/* STRUTTURA INTERNA E CONTENUTO CONTENITORE 3 */
 .textcontenitore3{
   color: white;
   font-family: sans-serif;
@@ -225,18 +225,25 @@ footer{
   margin-bottom: 50px;
 }
 
-
 .containerblocchi{
-  width: 900px;
+  width: 800px;
   margin: 0 auto;
 }
-.blocco{
+.blocco1{
+  border-bottom: 2px solid white;
+}
+.elementiblocco{
   display: inline-block;
   padding: 20px;
+  margin: 2px 0;
+  border-right: 2px solid white;
+}
+.blocco1 .elementiblocco:last-child, .blocco2 .elementiblocco:last-child{
+  border-right: 0;
 }
 
 
-/* STRUTTURA CONTENITORE 4 */
+/* STRUTTURA INTERNA CONTENITORE 4 */
 .firstlittlecontainer, .secondlittlecontainer{
   width: 1000px;
   margin: 50px auto;
