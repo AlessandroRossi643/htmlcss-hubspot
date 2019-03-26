@@ -59,14 +59,15 @@ header:after{
 }
 .contenitore4{
   height: 800px;
-  background-color: grey;
+  background-color: white;
+  padding: 100px;
 }
 
 
 /* STRUTTURA FOOTER */
 footer{
-  background-color: black;
-  height:150px;
+  background-color: #395060;
+  height:600px;
 }
 
 
@@ -224,6 +225,7 @@ footer{
   margin-bottom: 50px;
 }
 
+
 .containerblocchi{
   width: 900px;
   margin: 0 auto;
@@ -231,4 +233,117 @@ footer{
 .blocco{
   display: inline-block;
   padding: 20px;
+}
+
+
+/* CONTENUTO CONTENITORE 4 */
+.firstlittlecontainer, .secondlittlecontainer{
+  width: 1000px;
+  margin: 50px auto;
+
+}
+.textcontenitore4{
+  font-family: sans-serif;
+  color:#222830;
+}
+
+.flcleft{
+  float: left;
+}
+.flcleft h2{
+  font-size: 45px;
+  margin: 10px;
+}
+.flcleft h4{
+  font-size: 20px;
+  margin: 10px;
+}
+
+
+.flcright{
+  float: right;
+  width: 400px;
+}
+.flcright div{
+  display: inline-block;
+  margin: 5px;
+}
+.firstlittlecontainer::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.slcleft{
+  width: 400px;
+}
+.slcright{
+  float: right;
+  display: inline-block;
+}
+
+
+/* CONTENUTO FOOTER */
+/* Footer prima parte */
+.listafinale{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+.textfooter{
+  color: white;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.lista{
+  display: inline-block;
+  margin: 10px 70px;
+  list-style-type: none;
+  text-decoration:inherit;
+}
+.lista li{
+  margin: 15px;
+}
+.lista li:first-child{
+  font-weight: bold;
+}
+.contact{
+  text-align: right;
+  margin: 10px 60px;
+}
+.contact button{
+  padding: 2px;
+  height: 40px;
+  color: #395060;
+}
+.social i{
+  font-size: 20px;
+  margin: 10px;
+}
+.language li{
+  display:inline-block;
+  margin: 30px 0;
+  padding: 0px 20px;
+}
+
+
+/* Footer seconda parte */
+.leftfinale{
+  float: left;
+}
+.leftfinale img{
+  width: 150px;
+  height: 50px;
+}
+.leftfinale div{
+  font-size: 12px;
+}
+.rightfinale{
+  float: right;
+}
+.rightfinale div{
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
 }
