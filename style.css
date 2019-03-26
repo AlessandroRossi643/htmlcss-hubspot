@@ -58,9 +58,9 @@ header:after{
   padding: 70px 20px;
 }
 .contenitore4{
-  height: 800px;
+  height: 1000px;
   background-color: white;
-  padding: 100px;
+  padding: 80px;
 }
 
 
@@ -236,37 +236,40 @@ footer{
 }
 
 
-/* CONTENUTO CONTENITORE 4 */
+/* STRUTTURA CONTENITORE 4 */
 .firstlittlecontainer, .secondlittlecontainer{
   width: 1000px;
   margin: 50px auto;
-
 }
 .textcontenitore4{
   font-family: sans-serif;
   color:#222830;
 }
+.secondlittlecontainer{
+  margin-top: 200px;
+}
 
+/* contenuto primi due float */
 .flcleft{
   float: left;
 }
-.flcleft h2{
+.flcleft h2, .slcleft h2{
   font-size: 45px;
-  margin: 10px;
+  margin: 10px auto;
 }
 .flcleft h4{
   font-size: 20px;
-  margin: 10px;
+  margin: 10px auto;
 }
-
-
 .flcright{
   float: right;
   width: 400px;
 }
 .flcright div{
   display: inline-block;
-  margin: 5px;
+  margin: 0 10px;
+  font-size: 55px;
+  color: grey;
 }
 .firstlittlecontainer::after{
   display: table;
@@ -274,13 +277,36 @@ footer{
   clear: both;
 }
 
+/* contenuto secondi due float */
 .slcleft{
-  width: 400px;
+  width: 500px;
+  float: left;
+}
+.slcleft button{
+  height: 60px;
+  padding: 20px;
+  background-color: #d84422;
+  color: white;
+  margin: 25px 0;
+}
+.slcleft div:first-of-type{
+  font-size: 16px;
+  margin: 20px 0;
+}
+.slcleft div{
+  font-size: 12px;
+  margin-top: 10px;
 }
 .slcright{
   float: right;
-  display: inline-block;
 }
+.slcright img{
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
+  background-color: pink;
+}
+
 
 
 /* CONTENUTO FOOTER */
