@@ -44,6 +44,12 @@ header:after{
   clear: both;
 }
 
+.subcontainer1{
+  display: table;
+  content: "";
+  clear: both;
+}
+
 
 /* STRUTTURA MAIN */
 .contenitore1{
@@ -53,8 +59,8 @@ header:after{
 
 .contenitore2{
   width: 100%;
-  height: 1800px;
-  padding: 50px 0;
+  height: 1000px;
+  padding: 50px;
   background-color: #e3e6e8;
 }
 .contenitore3{
@@ -179,7 +185,7 @@ footer{
 /* CONTENUTO SECONDO CONTENITORE */
 /* Contenuto primo subcontenitore */
 .subcontainer1{
-  width: 65%;
+  width: 75%;
   height: 300px;
   margin: 0 auto;
   background-color: white;
@@ -196,7 +202,7 @@ footer{
   width: 200px;
   height: 200px;
 }
-.subleft1 button{
+.subleft1 button, .column button{
   height: 20px;
   background-color: #d84422;
   color: white;
@@ -226,10 +232,61 @@ footer{
   display: inline-block;
   padding-right: 25px;
 }
-li i{
+.subright1 ul li i, .column ul li i{
   color:#d84422;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
+
+/* Struttura colonne  */
+.containercolumn{
+  width: 75%;
+  margin: 0 auto;
+}
+.column{
+  float: left;
+  width: 31%;
+  background-color: white;
+  height: 500px;
+  margin: 5% 0;
+  text-align: center;
+  padding: 10px;
+  font-family: sans-serif;
+}
+.column:hover{
+  box-shadow: 5px 5px 8px 8px;
+}
+.column1, .column2{
+  margin-right: 3%;
+}
+
+
+/* Contenuto colonne */
+.column img{
+  width: 150px;
+  height: 150px;
+}
+.column h3{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.column p{
+  font-size: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+.column h4{
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: left;
+}
+.column ul{
+  margin: 20px 5px;
+  list-style-type: none;
+  text-align: left;
+}
+
+
 /* STRUTTURA INTERNA E CONTENUTO CONTENITORE 3 */
 .textcontenitore3{
   color: white;
