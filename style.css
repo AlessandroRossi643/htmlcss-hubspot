@@ -4,26 +4,29 @@
   padding: 0;
 }
 
-/* STRUTTURA HEADER */
+/* STRUTTURA HEADER, MAIN & FOOTER */
 header, main{
   width: 100vw;
 }
-.firstbar{
+.bar{
   width: 100%;
   height: 80px;
   line-height: 80px;
-  background-color: #e8ebef;
   padding: 0 10%;
+}
+.firstbar{
+  background-color: #e8ebef;
   border-bottom: 1px solid grey;
   position: fixed;
-  z-index: 2;
+  z-index: 1;
 }
 .secondbar{
-  width: 100%;
-  height: 80px;
-  line-height: 80px;
   background-color: white;
-  padding: 0 10%;
+  position: relative;
+  top: 80px;
+}
+.thirdbar{
+  background-color: #0b0c1c;
   position: relative;
   top: 80px;
 }
@@ -37,14 +40,7 @@ header, main{
   display: table;
   clear: both;
 }
-header:after{
-  content: "";
-  display: table;
-  clear: both;
-}
 
-
-/* STRUTTURA MAIN */
 .contenitore1{
   background: linear-gradient(45deg, #53dbcf,#157aa3);
   height: 1000px;
@@ -58,35 +54,18 @@ header:after{
 .contenitore3{
   height: 800px;
   background: linear-gradient(45deg, #53dbcf,#157aa3);
-  padding: 70px 20px;
+  padding: 70px 30px;
 }
 .contenitore4{
   height: 1000px;
   background-color: white;
   padding: 80px;
 }
-.subcontainer1{
-  display: table;
-  content: "";
-  clear: both;
-}
-.containercolumn{
-  display: table;
-  content: "";
-  clear: both;
-}
-.textcontenitore1{
-  display: table;
-  content: "";
-  clear: both;
-}
 
-/* STRUTTURA FOOTER */
 footer{
   background-color: #395060;
   height:600px;
 }
-
 
 
 /* STRUTTURA INTERNA E CONTENUTO PRIMA BARRA HEADER */
@@ -102,6 +81,9 @@ footer{
   font-family: sans-serif;
   color: #222830;
 }
+.firstbarleft div i{
+  margin: 0 10px;
+}
 .firstbarleft div:first-child{
   padding-right: 40px;
 }
@@ -111,6 +93,8 @@ footer{
 .firstbarright button{
   padding: 10px;
   font-size: 14px;
+  margin-left: 20px;
+  border-radius: 5px;
 }
 .firstbarright button:first-of-type{
   border: 1px solid #d84422;
@@ -118,19 +102,13 @@ footer{
   height: 40px;
   width: 70px;
   color: #d84422;
-  border-radius: 5px;
-  margin-left: 20px;
 }
 .firstbarright button:last-of-type{
   background-color: #d84422;
   height: 40px;
   width: 150px;
-  border-radius: 5px;
   color: white;
-  margin-left: 10px;
 }
-
-
 
 /* STRUTTURA INTERNA E CONTENUTO SECONDA BARRA HEADER */
 .secondbarleft{
@@ -158,15 +136,7 @@ footer{
   padding: 0 15px;
 }
 
-/* Contenuto terza barra */
-.thirdbar{
-  width: 100%;
-  height: 70px;
-  background-color: #0b0c1c;
-  position: relative;
-  top: 80px;
-  line-height: 70px;
-}
+/* STRUTTURA INTERNA E CONTENUTO TERZA BARRA HEADER */
 .thirdbar div{
   font-size: 18px;
   color: white;
@@ -181,7 +151,10 @@ footer{
   padding: 10px;
   margin: 0 15px;
 }
-/* CONTENUTO PRIMO CONTAINER */
+
+
+/* STRUTTURA INTERNA & CONTENUTO CONTENITORI */
+/* CONTENUTO PRIMO CONTENITORE */
 .textcontenitore1{
   float: left;
   width: 50%;
@@ -210,10 +183,15 @@ footer{
   font-size: 12px;
   width: 330px;
 }
-
+.textcontenitore1{
+  display: table;
+  content: "";
+  clear: both;
+}
 
 
 /* CONTENUTO SECONDO CONTENITORE */
+/* Contenuto iniziale pagina */
 .precolumn{
   width: 800px;
   height: 450px;
@@ -290,6 +268,11 @@ footer{
   margin-right: 10px;
   margin-bottom: 10px;
 }
+.subcontainer1{
+  display: table;
+  content: "";
+  clear: both;
+}
 
 /* Struttura colonne  */
 .containercolumn{
@@ -312,7 +295,11 @@ footer{
 .column1, .column2{
   margin-right: 3%;
 }
-
+.containercolumn{
+  display: table;
+  content: "";
+  clear: both;
+}
 
 /* Contenuto colonne */
 .column img{
@@ -341,7 +328,7 @@ footer{
 
 
 /* STRUTTURA INTERNA E CONTENUTO CONTENITORE 3 */
-.textcontenitore3{
+.stylecontainer3{
   color: white;
   font-family: sans-serif;
   font-size: 16px;
@@ -355,7 +342,6 @@ footer{
   padding: 5px 250px;
   margin-bottom: 50px;
 }
-
 .containerblocchi{
   width: 800px;
   margin: 0 auto;
@@ -374,14 +360,15 @@ footer{
 }
 
 
+
 /* STRUTTURA INTERNA CONTENITORE 4 */
+.stylecontainer4{
+  font-family: sans-serif;
+  color:#222830;
+}
 .firstlittlecontainer, .secondlittlecontainer{
   width: 1000px;
   margin: 50px auto;
-}
-.textcontenitore4{
-  font-family: sans-serif;
-  color:#222830;
 }
 .secondlittlecontainer{
   margin-top: 200px;
