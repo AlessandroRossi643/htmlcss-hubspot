@@ -59,7 +59,7 @@ header, main{
 .contenitore4{
   height: 1000px;
   background-color: white;
-  padding: 80px;
+  padding: 70px;
 }
 
 footer{
@@ -225,6 +225,7 @@ footer{
 }
 .subcontainer1:hover{
   box-shadow: 5px 5px 8px 8px;
+  transform: scale(1.1);
 }
 .subleft1{
   float: left;
@@ -291,6 +292,7 @@ footer{
 }
 .column:hover{
   box-shadow: 5px 5px 8px 8px;
+  transform: scale(1.1);
 }
 .column1, .column2{
   margin-right: 3%;
@@ -439,10 +441,9 @@ footer{
 /* CONTENUTO FOOTER */
 /* Footer prima parte */
 .listafinale{
-  width: 1200px;
+  width: 1000px;
   margin: 0 auto;
-  text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
 }
 .textfooter{
   color: white;
@@ -451,7 +452,7 @@ footer{
 }
 .lista{
   display: inline-block;
-  margin: 10px 70px;
+  margin-right: 110px;
   list-style-type: none;
   text-decoration:inherit;
 }
@@ -463,7 +464,7 @@ footer{
 }
 .contact{
   text-align: right;
-  margin: 10px 60px;
+  margin: 20px 90px;
 }
 .contact button{
   padding: 2px;
